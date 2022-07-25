@@ -1,11 +1,12 @@
 import React from 'react'
-import { Button } from 'antd';
-import "./App.css"
+import {Outlet} from 'react-router-dom'
+import "./App.less"
 
 export default function App() {
   return (
     <div>
-        <Button type="primary">Primary Button</Button>
+        <h2>App Component</h2>
+        <Outlet />
     </div>
   )
 }
